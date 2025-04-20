@@ -54,3 +54,26 @@ Start the API Server
 ```
 node server.js
 ```
+## 📡 API Endpoints
+
+| Method | Endpoint         | Description             |
+|--------|------------------|-------------------------|
+| GET    | `/assets`        | Get all assets          |
+| GET    | `/assets/:id`    | Read asset by ID        |
+| POST   | `/assets`        | Create a new asset      |
+| PUT    | `/assets/:id`    | Update an asset         |
+| DELETE | `/assets/:id`    | Delete an asset         |
+
+---
+
+### 🧪 Example: Create Asset (POST /assets)
+
+```json
+{
+  "ID": "asset101",
+  "Color": "blue",
+  "Size": "15",
+  "Owner": "Alice",
+  "AppraisedValue": "700"
+}
+```
