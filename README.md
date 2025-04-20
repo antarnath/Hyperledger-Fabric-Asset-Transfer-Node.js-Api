@@ -22,4 +22,16 @@ First, clone the official Hyperledger Fabric samples repository:
 
 ```bash
 git clone https://github.com/hyperledger/fabric-samples.git
-cd fabric-samples
+```
+Navigate to the test network directory within your local clone of the fabric-samples repository:
+```bash
+cd fabric-samples/test-network
+```
+Started the test network and created the channel with Certificate Authorities using:
+```bash
+./network.sh up createChannel -ca
+```
+Deployed the chaincode using:
+```bash
+./network.sh deployCC -ccn basic -ccp ../asset-transfer-basic/chaincode-go -ccl go
+```
