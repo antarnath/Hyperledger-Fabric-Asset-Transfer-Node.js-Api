@@ -26,11 +26,20 @@ Navigate to the test network directory within your local clone of the fabric-sam
 cd fabric-samples/test-network
 ```
 Started the test network and created the channel with Certificate Authorities using:
-```bash
+```
 ./network.sh up createChannel -ca
 ```
 Deployed the chaincode using:
-```bash
+```
 ./network.sh deployCC -ccn basic -ccp ../asset-transfer-basic/chaincode-go -ccl go
 ```
-## 🚀 Run the Fabric API
+## 🚀 Run The Server Using Node.js SDK
+First add this fabric-api folder to the fabric-sample direcotry then go to the fabric-api folder:
+```bash
+cd fabric-sample/fabric-api
+```
+Install Node.js Dependencies
+```
+npm install
+```
+
