@@ -42,4 +42,15 @@ Install Node.js Dependencies
 ```
 npm install
 ```
-
+Enroll Admin
+```
+node enrollAdmin.js
+```
+Register User
+```
+node registerUser.js
+```
+Start the API Server
+```
+node server.js
+```
