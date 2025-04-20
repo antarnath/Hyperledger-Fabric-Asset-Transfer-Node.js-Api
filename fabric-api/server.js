@@ -34,7 +34,7 @@ async function getContract() {
     return { gateway, contract };
 }
 
-// 🔍 GET all assets
+// GET all assets
 app.get('/assets', async (req, res) => {
     try {
         const { gateway, contract } = await getContract();
@@ -46,7 +46,7 @@ app.get('/assets', async (req, res) => {
     }
 });
 
-// ➕ POST create asset
+// POST create asset
 app.post('/assets', async (req, res) => {
     const { ID, Color, Size, Owner, AppraisedValue } = req.body;
     try {
@@ -59,7 +59,7 @@ app.post('/assets', async (req, res) => {
     }
 });
 
-// 🧠 GET asset by ID
+// GET asset by ID
 app.get('/assets/:id', async (req, res) => {
     const assetId = req.params.id;
     try {
@@ -72,7 +72,7 @@ app.get('/assets/:id', async (req, res) => {
     }
 });
 
-// ✏️ PUT update asset
+// PUT update asset
 app.put('/assets/:id', async (req, res) => {
     const assetId = req.params.id;
     const { Color, Size, Owner, AppraisedValue } = req.body;
@@ -87,7 +87,7 @@ app.put('/assets/:id', async (req, res) => {
     }
 });
 
-// 🗑️ DELETE asset
+// DELETE asset
 app.delete('/assets/:id', async (req, res) => {
     const assetId = req.params.id;
     try {

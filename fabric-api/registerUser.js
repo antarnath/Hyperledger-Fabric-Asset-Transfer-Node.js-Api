@@ -49,7 +49,7 @@ async function main() {
             type: 'X.509',
         };
         await wallet.put('appUser', x509Identity);
-        console.log('✅ Successfully registered and enrolled appUser');
+        console.log('Successfully registered and enrolled appUser');
     } catch (error) {
         console.error(`Failed to register user: ${error}`);
     }

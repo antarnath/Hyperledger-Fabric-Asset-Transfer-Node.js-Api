@@ -30,7 +30,7 @@ async function main() {
             type: 'X.509',
         };
         await wallet.put('admin', x509Identity);
-        console.log('✅ Successfully enrolled admin and stored in wallet');
+        console.log('Successfully enrolled admin and stored in wallet');
     } catch (error) {
         console.error(`Failed to enroll admin: ${error}`);
     }
