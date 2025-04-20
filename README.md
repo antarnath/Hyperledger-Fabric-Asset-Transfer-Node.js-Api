@@ -14,3 +14,12 @@ The smart contract (`chaincode`) supports the following functions:
 This sample highlights how to interact with a Hyperledger Fabric network through transaction invocation and wallet-based identity management in a simplified development environment.
 
 ---
+## 🧰 Getting Started
+
+### 📥 Clone Fabric Samples
+
+First, clone the official Hyperledger Fabric samples repository:
+
+```bash
+git clone https://github.com/hyperledger/fabric-samples.git
+cd fabric-samples
