@@ -33,4 +33,4 @@ Deployed the chaincode using:
 ```bash
 ./network.sh deployCC -ccn basic -ccp ../asset-transfer-basic/chaincode-go -ccl go
 ```
-##🚀 Run the Fabric API
+## 🚀 Run the Fabric API
